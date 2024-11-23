@@ -71,7 +71,7 @@ def infer(img_path):
     mask_rgb = mask_to_rgb(mask, color_dict)
     mask_rgb = cv2.cvtColor(mask_rgb, cv2.COLOR_RGB2BGR)
     plt.imshow(mask_rgb)
-    plt.axis('off')  # Hide axes
+    plt.axis('off') 
     plt.show()
     cv2.imwrite("prediction/{}.png".format(image_name), mask_rgb) 
  
